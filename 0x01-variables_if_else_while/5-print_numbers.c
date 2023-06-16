@@ -8,15 +8,15 @@
 */
 
 int main(void)
-{       
-        int i;
+{
+	int i;
 
-        for (i = 0; i < 10; i++)
-        {
-		printf("%d", i);
+	for (i = 0; i < 10; i++)
+	{
+	printf("%d", i);
 	}
 
-        putchar('\n');
-        return (0);
+	putchar('\n');
+	return (0);
 }
 
