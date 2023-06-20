@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 void print_fibonacci(int n) {
-    int first = 1, second = 2, next, count;
-    printf("%d, %d, ", first, second);
+    unsigned long long first = 1, second = 2, next, count;
+    printf("%llu, %llu, ", first, second);
 
     for (count = 3; count <= n; count++) {
         next = first + second;
-        printf("%d", next);
+        printf("%llu", next);
         if (count < n) {
             printf(", ");
         }
