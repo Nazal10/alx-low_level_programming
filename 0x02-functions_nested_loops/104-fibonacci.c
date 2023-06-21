@@ -1,18 +1,26 @@
 #include <stdio.h>
 
-int fibonacci(int n) {
-    if (n <= 1)
-        return n;
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+        int i;
+        long int fib1 = 1, fib2 = 2, fib_sum;
 
-    return fibonacci(n - 1) + fibonacci(n - 2);
-}
+        printf("%ld, %ld", fib1, fib2);
 
-int main() {
-    int i;
-    for (i = 0; i < 50; i++) {
-        printf("%d, ", fibonacci(i));
-    }
+        for (i = 2; i < 98; i++)
+        {
+                fib_sum = fib1 + fib2;
+                printf(", %ld", fib_sum);
+                fib1 = fib2;
+                fib2 = fib_sum;
+        }
 
-    return 0;
+        printf("\n");
+        return (0);
 }
 
