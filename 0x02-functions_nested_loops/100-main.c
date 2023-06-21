@@ -1,24 +1,19 @@
-#include <stdio.h>
+#include "main.h"
 
-void print_times_table(int n);
-
-int main() {
-    int n = 2;
-    printf("Case: print_times_table(%d);\n", n);
-    print_times_table(n);
-
-    n = 10;
-    printf("\nCase: print_times_table(%d);\n", n);
-    print_times_table(n);
-
-    n = 13;
-    printf("\nCase: print_times_table(%d);\n", n);
-    print_times_table(n);
-
-    n = 0;
-    printf("\nCase: print_times_table(%d);\n", n);
-    print_times_table(n);
-
-    return 0;
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	print_times_table(3);
+	_putchar('\n');
+	print_times_table(5);
+	_putchar('\n');
+	print_times_table(98);
+	_putchar('\n');
+	print_times_table(12);
+	return (0);
 }
 
