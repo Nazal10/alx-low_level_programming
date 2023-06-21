@@ -32,6 +32,6 @@ void print_fibonacci(void)
 int main(void)
 {
 	print_fibonacci();
-	return 0;
+	return (0);
 }
 
