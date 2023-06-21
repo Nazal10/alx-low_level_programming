@@ -6,13 +6,13 @@
 void print_fibonacci(void)
 {
 
-	unsigned long int a = 1, b = 2;
-	unsigned long int count = 0;
+	unsigned long long int a = 1, b = 2;
+	unsigned long long int count = 0;
 	printf("%lu, %lu", a, b);
 
 	while (count < 96)
 	{
-		unsigned long int temp = a + b;
+		unsigned long long int temp = a + b;
 		a = b;
 		b = temp;
 
