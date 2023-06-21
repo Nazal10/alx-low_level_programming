@@ -5,14 +5,14 @@
  */
 void print_fibonacci(void)
 {
-	unsigned int a = 1, b = 2;
-	unsigned int count = 0;
+	unsigned long a = 1, b = 2;
+	unsigned long count = 0;
 
 	printf("%u, %u", a, b);
 
 	while (count < 100)
 	{
-		unsigned int temp = a + b;
+		unsigned long temp = a + b;
 		a = b;
 		b = temp;
 
