@@ -13,7 +13,7 @@ int main(void)
 	unsigned long fib1 = 1;
 	unsigned long fib2 = 2;
 	unsigned long next;
-	unsigned long sum = 2;  /* Start with the initial even value */
+	unsigned long sum = 2; /* Start with the initial even value */
 
 	while (fib2 <= 4000000)
 	{
@@ -27,6 +27,6 @@ int main(void)
 
 	printf("%lu\n", sum);
 
-	return 0;
+	return (0);
 }
 
