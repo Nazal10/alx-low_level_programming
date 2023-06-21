@@ -8,7 +8,7 @@ void print_fibonacci(void)
 	unsigned long a = 1, b = 2;
 	unsigned long count = 0;
 
-	printf("%u, %u", a, b);
+	printf("%lu, %lu", a, b);
 
 	while (count < 100)
 	{
@@ -16,7 +16,7 @@ void print_fibonacci(void)
 		a = b;
 		b = temp;
 
-		printf(", %u", temp);
+		printf(", %lu", temp);
 
 		count++;
 	}
