@@ -12,7 +12,7 @@ void print_fibonacci(void)
 
 	while (count < 96)
 	{
-		unsigned long temp = a + b;
+		unsigned long int temp = a + b;
 		a = b;
 		b = temp;
 
