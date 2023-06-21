@@ -1,26 +1,29 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-        int i;
-        long int fib1 = 1, fib2 = 2, fib_sum;
+void print_fibonacci() {
+    unsigned int a = 1, b = 2;
+    unsigned int count = 0;
 
-        printf("%ld, %ld", fib1, fib2);
+    printf("%u, %u, ", a, b);
 
-        for (i = 2; i < 98; i++)
-        {
-                fib_sum = fib1 + fib2;
-                printf(", %ld", fib_sum);
-                fib1 = fib2;
-                fib2 = fib_sum;
+    while (count < 96) {
+        unsigned int temp = a + b;
+        a = b;
+        b = temp;
+
+        printf("%u", temp);
+
+        count++;
+        if (count != 96) {
+            printf(", ");
         }
+    }
 
-        printf("\n");
-        return (0);
+    printf("\n");
+}
+
+int main() {
+    print_fibonacci();
+    return 0;
 }
 
