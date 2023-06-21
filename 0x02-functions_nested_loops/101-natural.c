@@ -1,37 +1,26 @@
 #include <stdio.h>
 
 /**
- * sum_multiples_3_or_5 - Calculates the sum of multiples of 3 or 5 below 1024.
+ * main - Entry point
  *
- * Return: The sum of the multiples.
- */
-int sum_multiples_3_or_5(void)
-{
-        int total = 0;
-        int num;
-
-        for (num = 1; num < 1024; num++)
-        {
-                if (num % 3 == 0 || num % 5 == 0)
-                {
-                        total += num;
-                }
-        }
-
-        return (total);
-}
-
-/**
- * main - Entry point of the program.
+ * Description: Computes and prints the sum of all multiples of 3 or 5
+ * below 1024 (excluded)
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 int main(void)
 {
-        int result = sum_multiples_3_or_5();
+	int i;
+	int sum = 0;
 
-        printf("%d\n", result);
+	for (i = 0; i < 1024; i++)
+	{
+		if (i % 3 == 0 || i % 5 == 0)
+			sum += i;
+	}
 
-        return (0);
+	printf("%d\n", sum);
+
+	return (0);
 }
 
