@@ -5,9 +5,9 @@
  */
 void print_fibonacci(void)
 {
-	unsigned long a = 1, b = 2;
-	unsigned long count = 0;
 
+	unsigned long int a = 1, b = 2;
+	unsigned long int count = 0;
 	printf("%lu, %lu", a, b);
 
 	while (count < 96)
