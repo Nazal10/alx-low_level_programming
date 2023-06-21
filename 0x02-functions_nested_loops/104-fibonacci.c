@@ -10,7 +10,7 @@ void print_fibonacci(void)
 
 	printf("%u, %u", a, b);
 
-	while (count < 96)
+	while (count < 100)
 	{
 		unsigned int temp = a + b;
 		a = b;
