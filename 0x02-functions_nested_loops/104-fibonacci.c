@@ -1,28 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of the program
+ * main - Entry point
  *
- * Return: 0 on success
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    unsigned int first = 1, second = 2, next;
-    unsigned int count;
+	int i;
+	long int fib1 = 1, fib2 = 2, fib_sum;
 
-    printf("%u, %u", first, second);
+	printf("%ld, %ld", fib1, fib2);
 
-    for (count = 3; count <= 98; count++)
-    {
-        next = first + second;
-        printf(", %u", next);
+	for (i = 2; i < 98; i++)
+	{
+		fib_sum = fib1 + fib2;
+		printf(", %ld", fib_sum);
+		fib1 = fib2;
+		fib2 = fib_sum;
+	}
 
-        first = second;
-        second = next;
-    }
-
-    printf("\n");
-
-    return 0;
+	printf("\n");
+	return (0);
 }
 
