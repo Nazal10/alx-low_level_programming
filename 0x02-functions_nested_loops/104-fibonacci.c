@@ -12,7 +12,8 @@ void print_fibonacci(int n)
 
 	printf("%d, %d", prev, current);
 
-	for (i = 3; i <= n; i++) {
+	for (i = 3; i <= n; i++)
+	{
 		int next = prev + current;
 		printf(", %d", next);
 		prev = current;
@@ -30,6 +31,6 @@ void print_fibonacci(int n)
 int main(void)
 {
 	print_fibonacci(98);
-	return 0;
+	return (0);
 }
 
